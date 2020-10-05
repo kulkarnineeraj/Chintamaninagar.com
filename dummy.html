@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+function clicked() {	
+	
+	alert($("#includedContent"));
+	//element.innerHTML("Test");	
+	$("#includedContent").load("D://experiments/Chintamaninagar/Chintamaninagar.html");
+}
+</script>
+</head>
+<body onload="clicked();">
+
+<h1>My First JavaScript</h1>
+ <div id="includedContent">Test content</div>
+ <iframe src="Chintamaninagar.html"></iframe>
+</body>
+</html> 

@@ -1,0 +1,57 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<div id=header class="w3-bar w3-black">
+  <a href="Chintamaninagar.html" class="w3-button w3-bar-item">Home</a>
+  <a href="articles.html" class="w3-button w3-bar-item">Articles</a>
+  <a href="upload.html" class="w3-button w3-bar-item">Upload</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contacts</a>
+  <a href="contactus.html"  class="w3-button w3-bar-item">Contact Us</a>
+</div>
+<Form>
+<fieldset>
+<legend>Announcements</legend>
+Enter date of event
+<label for="day">Date of Event</label> 
+<input type="date" name="day"> <br> <br>
+<label for="textarea">Announcements:</label> 
+ <textarea rows="3" cols="20"> </textarea><br> <br>
+ <input type="button" id="SubmitAnnouncements" value="SubmitAnnouncements" size="30"> <br> <br>
+<fieldset>
+ </Form>
+
+<div>
+
+<select>
+<option value="Receipes">Receipes</option>
+<option value="Articles">Articles</option>
+</select>
+
+
+<p>
+
+  Yes:
+<input type="radio" name="yesorno" value=""> <br> <br>
+No:
+<input type="radio" name="yesorno" value=""> <br> <br>
+</p>
+
+
+<label for="Receipes" >Receipes</label> 
+<input type="checkbox" name="" checked="checked" Receipes> <br> <br>
+
+<input type='file' /> 
+<script>
+window.addEventListener('load', function() { 
+document.querySelector('input[type="file"]').addEventListener('change', function()
+ { if (this.files && this.files[0]) { var img = document.querySelector('img'); 
+img.src = URL.createObjectURL(this.files[0]); 
+img.onload = imageIsLoaded;
+      } 
+   });
+ }); 
+function imageIsLoaded() {  } 
+</script>
+
+
+</div>
