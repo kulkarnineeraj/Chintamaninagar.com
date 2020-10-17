@@ -12,6 +12,7 @@
 </div>
 
 <head>
+<script src="javascript.js"></script>
 <style>
 table, th, td {
   border: 1px solid black;
@@ -24,6 +25,17 @@ th, td {
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
 * {
   box-sizing: border-box;
 }
@@ -62,7 +74,14 @@ th, td {
 <button onclick="displayTable('Saloon')">Saloon</button><br><br>
 <button onclick="displayTable('Stationery')">Stationery</button><br><br>
 <button onclick="displayTable('Tailors')">Tailors</button><br><br>
-  </div>
+</div>
+ 
+<!-- 
+<iframe align="right" style="display:none" 
+frameborder="0", width="500", height="600"
+src="Animal Rescue.html" name="Animalrescue" id="Animalrescue">
+</iframe> <br>
+-->
   <div class="column">
    <table id="Doctors" style="display:none" align="left">
   <tr>
@@ -346,15 +365,21 @@ th, td {
 </div>
 
 <script>
-function displayTable(x)
+/*
+function displayiframe(x)
 {
-	var y=document.getElementsByTagName("table")
+	var y=document.getElementsByTagName("iframe")
+	alert(y)
 	for(i=0;i<y.length;i++)
 	{
 		y[i].style="display:none";
 	}
-	document.getElementById(x).style="display:default; width:75%; margin-right:80px";
+	document.getElementById(x).style="display:""; width:75%; margin-right:80px";
 }
+*/
+
+
+
 </script>
 
 

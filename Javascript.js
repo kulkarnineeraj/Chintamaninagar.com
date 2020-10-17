@@ -1,20 +1,31 @@
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-//Bucket Configurations
-var bucketName = BUCKET_NAME;
-var bucketRegion = BUCKET_REGION;
-var IdentityPoolId = IDENTITY_POOL_ID;
 
- AWS.config.update({
-                region: bucketRegion,
-                credentials: new AWS.CognitoIdentityCredentials({
-                    IdentityPoolId: IdentityPoolId
-                })
-            });
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
 
-            var s3 = new AWS.S3({
-                apiVersion: '2006-03-01',
-                params: {Bucket: bucketName}
-        });
-</script>
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+	 slides[i].style.display = "none";  
+	
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function displayTable(x)
+{
+ 
+	var y=document.getElementsByTagName("table")
+	
+	for(i=0;i<y.length;i++)
+	{
+		y[i].style="display:none";
+	}
+	document.getElementById(x).style="width:75%; margin-right:80px";
+}

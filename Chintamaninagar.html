@@ -13,6 +13,7 @@
 </div>
 
 <header class="w3-center w3-margin-bottom">
+<title>Chintamaninagar</title>
   <h1><b>CHINTAMANI NAGAR</b></h1>
 <fieldset>
 <legend> Announcements</legend>
@@ -27,9 +28,10 @@
 frameborder="0", width="500", height="600"
 src="advertisements.html" name="OurAdvertisments" id="OurAdvertisments">
 </iframe> <br>
+<script src="javascript.js"></script>
 
 <fieldset style="width:60%">
-<legend align="center"> Photos of Events </legend>
+<legend align="center" > Photos of Events </legend>
 <div class="slideshow-container">
 <div class="mySlides fade">
   <img src="./images/20200825_195152.jpg" style="width:100%" align="left">
@@ -47,39 +49,20 @@ src="advertisements.html" name="OurAdvertisments" id="OurAdvertisments">
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"> Important neeraj</span> 
+  <span class="dot">Import shailesh</span> 
+  <span class="dot">important baba</span> 
 </div>
-  <!-- Slide Show -->
+ 
 <script>
 var slideIndex = 0;
 showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 </script>
 </fieldset>
 
 
 </body>
-<footer id="myFooter"></footer>
 
-<script src="load_essentials.js"></script>
 
 </html>
