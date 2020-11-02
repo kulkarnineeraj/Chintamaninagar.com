@@ -2,6 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="style.css">
 
 <div id=header class="w3-bar w3-black">
   <a href="Chintamaninagar.html" class="w3-button w3-bar-item">Home</a>
@@ -13,374 +14,38 @@
 
 <head>
 <script src="javascript.js"></script>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;    
-}
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-button {
-  background: none!important;
-  border: none;
-  padding: 0!important;
-  /*optional*/
-  font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: #069;
-  text-decoration: underline;
-  cursor: pointer;
-}
-* {
-  box-sizing: border-box;
-}
-.column {
-  float: left;
-  width: 100px;
-  padding: 10px;
-  height: 300px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
-<body>
+
 
 <h2>Important Phone Numbers</h2>
+</head>
 
-<div class="row">
-  <div class="column"; width:75%>
-<button onclick="displayTable('AnimalRescue')">Animal Rescue</button><br><br>
-<button onclick="displayTable('Auto')">Auto</button><br><br>
-<button onclick="displayTable('Carpenters')">Carpenters</button><br><br>
-<button onclick="displayTable('Doctors')">Doctors</button><br><br>
-<button onclick="displayTable('Electricians')">Electricians</button><br><br>
-<button onclick="displayTable('Garage')">Garage</button><br><br>
-<button onclick="displayTable('Gardners')">Gardners</button><br><br>
-<button onclick="displayTable('Hospitals')">Hospitals</button><br><br>
-<button onclick="displayTable('Mill')">Mill/Girani</button><br><br>
-<button onclick="displayTable('NetProvider')">Net Provider</button><br><br>
-<button onclick="displayTable('Nursing')">Nursing</button><br><br>
-<button onclick="displayTable('Pharmacy')">Pharmacy</button><br><br>
-<button onclick="displayTable('Plumbers')">Plumbers</button><br><br>
-<button onclick="displayTable('Saloon')">Saloon</button><br><br>
-<button onclick="displayTable('Stationery')">Stationery</button><br><br>
-<button onclick="displayTable('Tailors')">Tailors</button><br><br>
-</div>
- 
-<!-- 
-<iframe align="right" style="display:none" 
-frameborder="0", width="500", height="600"
-src="Animal Rescue.html" name="Animalrescue" id="Animalrescue">
-</iframe> <br>
--->
-  <div class="column">
-   <table id="Doctors" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Doctors</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="3">Telephone:</th>
-    <td>name surname</td>
-  </tr>
-  <tr>
-    <td>name surname</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-  </tr>
-</table>
-
-<table id="Carpenters" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Carpenters</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="1">Telephone:</th>
-    <td>Sharma 9689591986</td>
-  </tr>
-</table>
-
-<table id="AnimalRescue" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Animal Rescue</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="3">Telephone:</th>
-    <td>Katraj Prani Anathalay 020-24370747</td>
-  </tr>
-  <tr>
-    <td>Pakshimitra Association 9823041457</td>
-  </tr>
- <tr>
-    <td>Sanket Sumant 9823221655</td>
-  </tr>
-</table>
-
-<table id="Auto" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Auto</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="5">Telephone:</th>
-    <td>Bhau 9881900477</td>
-  </tr>
-  <tr>
-    <td>Jadhav 9822198641</td>
-  </tr>
-   <tr>
-    <td>Kaivalya Tagare 9764892789</td>
-  </tr>
- <tr>
-    <td>Nitin Yadav 8830428470</td>
-  </tr>
- <tr>
-    <td>Balu Kaka 9890168208</td>
-  </tr>
-</table>
-
-<table id="Electricians" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Electricians</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="5">Telephone:</th>
-    <td>Dilip 9822946679</td>
-  </tr>
-  <tr>
-    <td>Dilip Renuse 9822946679</td>
-  </tr>
-   <tr>
-    <td>Mahesh Abade 9765973773</td>
-  </tr>
- <tr>
-    <td>Omkar 9422304064</td>
-  </tr>
- <tr>
-    <td>Sunil Jangavali 9890584442</td>
-  </tr>
-</table>
-
-<table id="Hospitals" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Hospitals</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="4">Telephone:</th>
-    <td>Jehangir Hospitals 020-66819966/67/68 / 8888881066</td>
-  </tr>
-  <tr>
-    <td>Noble Hospitals	Hospital 7066702323 / 8007006611</td>
-  </tr>
-   <tr>
-    <td>Sahyadri Hospitals Ltd.	Hospital 8806252525</td>
-  </tr>
- <tr>
-    <td>Villoo Poonawala Memmorial Hospital 020-67452200/2222/2296</td>
-  </tr>
-</table>
-
-<table id="Garage" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Garage</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="3">Telephone:</th>
-    <td>Vijay Accessories / Subhash Motors 9822047007</td>
-  </tr>
-  <tr>
-    <td>Krishna	Garage 9923287661</td>
-  </tr>
-  <tr>
-    <td>Kabir Motors 020-24221723/ 2988 / 9850920080</td>
-  </tr>
-</table>
-
-<table id="NetProvider" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Net Provider</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="5">Telephone:</th>
-    <td>Vilas Jagtap 9623633312 / 8600886979</td>
-  </tr>
-  <tr>
-    <td>Shrikant 9545662668</td>
-  </tr>
-   <tr>
-    <td>Yogesh Kamble 9657334603 / 7887350097</td>
-  </tr>
- <tr>
-    <td>Sukhakarta Enterprises 8888492929</td>
-  </tr>
- <tr>
-    <td>Hemant Suryawanshi 8308302424
-</td>
-  </tr>
-</table>
-
-<table id="Mill" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>mill/Girani</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="5">Telephone:</th>
-    <td>Rahul Unecha 9890576154</td>
-  </tr>
-</table>
-
-<table id="Nursing" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Nursing</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="3">Telephone:</th>
-    <td>Anuja Deodhar 9921059898</td>
-  </tr>
-  <tr>
-    <td>Seva Nursing Bureau 020-24470147</td>
-  </tr>
-  <tr>
-    <td>Siddhi Nurses Bureau 9850082773</td>
-  </tr>
-</table>
-
-<table id="Pharmacy" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Pharmacy</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="6">Telephone:</th>
-    <td>Arvind Medicals 020-24221444 / 9011190789</td>
-  </tr>
-  <tr>
-    <td>Medplus 020-24216993</td>
-  </tr>
-   <tr>
-    <td>Nirmal Medical 020-24231073</td>
-  </tr>
- <tr>
-    <td>Raju Medico 9823598650</td>
-  </tr>
- <tr>
-    <td>Sachin Medical 020-24231044</td>
-  </tr>
- <tr>
-    <td>Trimurti Medical 020-24220036</td>
-  </tr>
-</table>
-
-<table id="Plumbers" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Plumbers</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="3">Telephone:</th>
-    <td>Anil Sonawane 9860008491</td>
-  </tr>
-  <tr>
-    <td>Ghadge 9822761417</td>
-  </tr>
-  <tr>
-    <td>Tukaram 8421795249 / 8856873322</td>
-  </tr>
-</table>
-
-<table id="Saloon" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Saloon</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="3">Telephone:</th>
-    <td>Akshay 8975603299</td>
-  </tr>
-  <tr>
-    <td>Nilesh 8625990942</td>
-  </tr>
-  <tr>
-    <td>Deepak 9834107512
-</td>
-  </tr>
-</table>
-
-
-<table id="Stationery" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Stationery Shop</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="2">Telephone:</th>
-    <td>Artist Katta Shop 8055984997</td>
-  </tr>
-  <tr>
-    <td>Yash Papers 9890156763</td>
-  </tr>
-</table>
-
-<table id="Tailors" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Tailors</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="1">Telephone:</th>
-    <td>Kubera 9763700549</td>
-  </tr>
-</table>
-
-<table id="Gardners" style="display:none" align="left">
-  <tr>
-    <th>Profession:</th>
-    <td><u><b>Gardners</b></u></td>
-  </tr>
-  <tr>
-    <th rowspan="1">Telephone:</th>
-    <td>Raju Dhawale 9822318003</td>
-  </tr>
-</table>
-
+<body>
+<div class="dropdown">
+  <button onclick="MyFunction()" class="dropbtn">Click to show contacts</button>
+  <div id="myDropdown" class="dropdown-content" >
+    <input type="text" placeholder="Search for professions..." id="myInput" onkeyup="filterFunction()">
+	<a href="./services/Animal Rescue.html">Animal Rescue</a>
+	<a href="./services/Auto.html">Auto</a>
+	<a href="./services/Carpenter.html">Carpenters</a>
+	<a href="./services/Doctor.html">Doctors</a>
+	<a href="./services/Electrician.html">Electricians</a>
+	<a href="./services/Garage.html">Garage</a>
+	<a href="./services/Gardner.html">Gardners</a>
+	<a href="./services/Hospital.html">Hospitals</a>
+	<a href="./services/Mill.html">Mill/Girani</a>
+	<a href="./services/Net provider.html">Net Provider</a>
+	<a href="./services/Nursing.html">Nursing</a>
+	<a href="./services/Pharmacy.html">Pharmacy</a>
+	<a href="./services/Plumber.html">Plumbers</a>
+	<a href="./services/Saloon.html">Saloon</a>
+	<a href="./services/Stationery.html">Stationery</a>
+	<a href="./services/Tailor.html">Tailors</a>
   </div>
 </div>
 
-<script>
-/*
-function displayiframe(x)
-{
-	var y=document.getElementsByTagName("iframe")
-	alert(y)
-	for(i=0;i<y.length;i++)
-	{
-		y[i].style="display:none";
-	}
-	document.getElementById(x).style="display:""; width:75%; margin-right:80px";
-}
-*/
 
 
 
-</script>
 
 
 </body>

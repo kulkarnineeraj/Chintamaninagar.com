@@ -42,3 +42,101 @@
   text-align: center; /* Center text*/
   background: #ddd; /* Grey background */
 }
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+input.textBox
+{
+margin-top: 5px;
+margin-bottom: 5px;
+height: 30px;
+width: 300px;
+font-size: 15px;
+line-height: 30px;
+display:inline-block;
+
+}
+
+label.inputLabel
+{
+font-family: Verdana;
+font-size: 15px;
+line-height: 30px;
+display: inline-block;
+}
+.footer {
+  margin: none;
+  padding: 10px; /* Some padding */
+  text-align: center; /* Center text*/
+  color: white;
+  background: black; /* Grey background */
+}
+
+.main{
+margin-top:20px;
+width:600px;
+position:absolute;
+left:50%;
+top:10%	
+bottom:50%;
+background-color:lighterorange;
+}
+.sideright{
+margin-top:20px;
+width:600px;
+align:left;
+right:50%;
+top:50%;
+background-color:light gray;
+}

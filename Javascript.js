@@ -1,4 +1,4 @@
-
+//Chintamaninagar page
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -18,14 +18,25 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-function displayTable(x)
-{
- 
-	var y=document.getElementsByTagName("table")
-	
-	for(i=0;i<y.length;i++)
-	{
-		y[i].style="display:none";
-	}
-	document.getElementById(x).style="width:75%; margin-right:80px";
+//Contacts page
+function MyFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
+//Contacts page
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+
+}
+	
